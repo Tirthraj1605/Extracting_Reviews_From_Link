@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Extractor</title>
+</head>
+<body>
+    <h1>Extract Reviews and HTML Content</h1>
+
+    <form method="POST">
+        <label for="url">Product Page URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Extract</button>
+    </form>
+
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if result %}
+        <h2>Extracted HTML Content (Preview):</h2>
+        <pre>{{ result.html_content[:2000] }}</pre>  <!-- Show the first 2000 characters -->
+
+        <h2>Reviews Count:</h2>
+        <p>{{ result.reviews_count }}</p>
+    {% endif %}
+</body>
+</html>
