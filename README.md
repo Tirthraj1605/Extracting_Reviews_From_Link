@@ -4,7 +4,7 @@ This is a simple web application built with Flask and Playwright for extracting 
 
 ## Image 
 
-![Alt text](path_to_your_image)
+![Alt text](Screenshot.png)
 
 ## Features
 - Extracts the reviews count from a given product page.
