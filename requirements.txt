@@ -1,3 +1,4 @@
 Flask==2.2.2
+werkzeug==2.2.2
 playwright==1.31.0
 asyncio==3.4.3
